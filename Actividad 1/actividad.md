@@ -63,6 +63,30 @@ Resultado
 
 ## 2. Pipeline CI/CD
 
+### Parte 1 Configuración integración continua
 - Estructura de proyecto 
 
 ![alt text](image-5.png)
+
+
+- Archivo ci.yml
+
+![alt text](image-7.png)
+
+- Código a github
+
+![alt text](image-6.png)
+
+### Parte 2 Configuración entrega continua
+- Creación de dockerfile
+
+Necesitamos un Dockerfile para definir como se construirá la imagen Docker. Por ejemplo, el entorno donde trabajará y qué acciones realizará 
+
+![alt text](image-8.png)
+
+- Construcción de imagen docker
+
+```javascript
+docker build -t devops-practice
+```
+
