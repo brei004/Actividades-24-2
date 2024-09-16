@@ -1,4 +1,4 @@
-name: CI Pipeline
+name: CI/CD Pipeline
 
 on:
   push:
@@ -11,7 +11,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -26,3 +25,9 @@ jobs:
 
       - name: Run tests
         run: npm test
+
+      - name: Build Docker image
+        run: docker build -t devops-practice .
+
+      - name: Run Docker container
+        run: docker run -d -p 3000:3000 devops-practice

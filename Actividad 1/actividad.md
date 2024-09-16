@@ -90,3 +90,15 @@ Necesitamos un Dockerfile para definir como se construirá la imagen Docker. Por
 docker build -t devops-practice
 ```
 
+
+- Ejecución del imagen en contenedor
+
+![alt text](image/image-9.png)
+
+- Automatización con github actions
+
+
+
+- Ejecución local 
+
+![alt text](image-9.png)
