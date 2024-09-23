@@ -71,11 +71,18 @@ Resultado
 
 - Archivo ci.yml
 
+
+
 ![alt text](image-7.png)
 
 - Código a github
 
 ![alt text](image-6.png)
+
+Ejecución en github 
+![alt text](image-14.png)
+
+Hubo un problema, ya que el servidor seguía en ejecución y no terminaba. Lo que no permitía finalizar la integración
 
 ### Parte 2 Configuración entrega continua
 - Creación de dockerfile
@@ -97,8 +104,18 @@ docker build -t devops-practice
 
 - Automatización con github actions
 
+En este archivo definimos las acciones que se están ejecutando en nuestro proyecto, tenemos que agregar la imagen y el contenedor recien creados
 
+![alt text](image-11.png)
 
 - Ejecución local 
 
 ![alt text](image-9.png)
+
+- Automatización 
+
+Usamos docker compose ya que facilita la creación de pruebas simulando el entorno local de ejecución
+
+![alt text](image-12.png)
+
+![alt text](image-13.png)
